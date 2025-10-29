@@ -15,8 +15,11 @@ export class DataBinding {
   random : string = "";
   onSave(){
     alert("Data Saved Successfully..");
+     console.log("Testing conflicts..");
   }
   onChange(){
-    alert("Country has Changed..");
+    console.log("Country has Changed..");
+    alert("Testing conflicts....");
   }
 }
+
