@@ -1,0 +1,32 @@
+<div align="center">
+    <h4> one way Data Binding</h4>
+        <div>
+            <p>1. IntertPolation </p>
+            <p>{{topic}} from {{name}} </p>
+        </div>
+        <div>
+            <p>2. Property Binding </p>
+           <input type="text" name="" id="" [value]="topic" >
+            <div>
+           <!-- <img [src]="pic" alt=""> -->
+        </div>
+        <div>
+               <p>3. Event Binding </p>
+            <button (click)="onSave()">Save </button>
+             <select (change)="onChange()">
+                <option value="Country">Country</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+            </select>
+            <h4>Two way Data Binding...</h4>
+            <div>
+                <input type="text" [(ngModel)] = "random">
+                {{random}}
+            </div>
+        </div>
+      
+        </div>
+        
+</div>

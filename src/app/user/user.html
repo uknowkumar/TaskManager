@@ -1,0 +1,25 @@
+<div class="user-card">
+	<p>User Registration Form</p>
+
+	<div class="form-row">
+		<label for="firstName">First Name:</label>
+		<input id="firstName" #firstName type="text" placeholder="Enter first name">
+	</div>
+
+	<div class="form-row">
+		<label for="lastName">Last Name:</label>
+		<input id="lastName" #lastName type="text" placeholder="Enter last name">
+	</div>
+
+	<div class="form-row">
+		<label for="email">Email:</label>
+		<input id="email" #email type="email" placeholder="Enter email" required (blur)="emailTouched = true" aria-required="true" [attr.aria-invalid]="emailTouched && !email.validity.valid">
+		<div class="form-error" *ngIf="emailTouched && !email.validity.valid">Please enter a valid email address.</div>
+	</div>
+
+	<div class="actions">
+		<button id="registerBtn" type="button" class="btn btn-primary" aria-label="Register user" (click)="onRegister(firstName.value, lastName.value, email.value)" [disabled]="!email || !email.validity || !email.validity.valid">Register</button>
+	</div>
+
+</div>
+ 
