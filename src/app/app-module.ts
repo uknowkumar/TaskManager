@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { User } from './user/user';
+import { DataBinding } from './data-binding/data-binding';
 
 @NgModule({
   declarations: [
-    App
+    
+  
+    
   ],
   imports: [
     BrowserModule,
