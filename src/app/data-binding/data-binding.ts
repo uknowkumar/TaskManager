@@ -14,20 +14,12 @@ export class DataBinding {
   // pic : string = "https://i.imgur.com/OB0y6MR.jpg";
   random : string = "";
   onSave(){
-   console.log("Data Saved Successfully.. Testing conflicts..");
-    console.log("Data Saved Successfully.. Testing conflicts..");
-    console.log("Testing conflicts.. Data Saved Successfully.. ");
-    console.log("Data Saved Successfully.. Testing conflicts..");
+   console.log("Data Save");
     alert("Data Saved Successfully..");
-    console.log("Data Saved Successfully.. Testing conflicts..");
   }
   onChange(){
-   console.log("Country has Changed.. Testing conflicts..");
     console.log("Country has Changed.. Testing conflicts..");
-    console.log("Testing conflicts.. Country has Changed..");
     alert("Country has Changed..");
-    console.log("Country has Changed.. Testing conflicts..");
-
-  }
+     }
 }
 
