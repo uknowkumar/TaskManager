@@ -7,7 +7,7 @@
     <groupId>com.uknowkumar</groupId>
     <artifactId>TaskManager</artifactId>
     <version>0.1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>TaskManager</name>
     <description>TaskManager project</description>
