@@ -12,8 +12,8 @@ RUN npm ci
 # Copy source code
 COPY . .
 
-# Build the application
-RUN npm run build
+# Build the Angular application
+RUN npm run build -- --configuration production
 
 # Stage 2: Production
 FROM node:18-alpine
@@ -24,7 +24,8 @@ WORKDIR /app
 RUN npm install -g http-server
 
 # Copy built application from build stage
-COPY --from=build /app/dist ./dist
+# Angular builds output to dist/task-manager by default
+COPY --from=build /app/dist/task-manager ./dist
 
 # Expose port
 EXPOSE 8080
